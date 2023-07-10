@@ -1,0 +1,1 @@
+# react-typescript-prettier-eslint-tests-precommit
