@@ -1,7 +1,9 @@
 # Configure react typescript with prettier, eslint, automatic testing and enforce with precommit
 1. Scaffold the project 
 > yarn create react-app mycoolapp --template typescript
+ 
 or
+
 > yarn create vite
 (react, typescript) mostly default options.
 2. Add lint and format scripts in package.json:
