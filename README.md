@@ -94,7 +94,8 @@
                 "ignoreUrls": true
             }
         ],
-        "@typescript-eslint/no-explicit-any": "error"
+        "@typescript-eslint/no-explicit-any": "error",
+        
     },
     "settings": {
         "react": {
@@ -103,6 +104,16 @@
     }
 }
 ```
+
+When the linter complains about React not being imported, add this rule:
+```
+{
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
+}
+```
+
 6. install dev dependancies (make sure to do so in a git repository, just run `git init` if errors occour):
 > yarn add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier@^5.0.0-alpha.1 eslint-plugin-react husky lint-staged prettier -D
 
