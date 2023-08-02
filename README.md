@@ -6,7 +6,7 @@ or
 
 > yarn create vite
 (react, typescript) mostly default options.
-2. Add lint and format scripts in package.json:
+2. Add lint and format scripts in package.json for CRA:
 ```json
 {
     "scripts": {
@@ -17,6 +17,18 @@ or
     }
 }
 ```
+
+For vite, use this:
+```
+{
+    "scripts": {
+      "fix": "eslint --fix .",
+      "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
+      "prepare": "husky install"
+    }
+}
+```
+
 3. Add husky and lint-staged to package.json as root keys:
 ```json
 {
