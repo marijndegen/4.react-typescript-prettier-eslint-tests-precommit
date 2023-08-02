@@ -1,4 +1,5 @@
 # Configure react typescript with prettier, eslint, automatic testing and enforce with precommit
+**NOTE**: *After following the tutorial, check that your editor uses prettier as default formatter and formats stuff automatically, otherwise your git add / commit will be glitchy*
 1. Scaffold the project 
 > yarn create react-app mycoolapp --template typescript
  
